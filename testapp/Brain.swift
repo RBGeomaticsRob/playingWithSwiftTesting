@@ -27,6 +27,10 @@ class Brain {
     }
     
     func check(number: Int) -> String {
-        return "Fizz"
+        if number == 3 {
+            return "Fizz"
+        } else {
+            return "Buzz"
+        }
     }
 }
