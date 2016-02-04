@@ -11,6 +11,8 @@ import XCTest
 @testable import testapp
 
 class BrainTests: XCTestCase {
+    
+    let brain = Brain()
 
     override func setUp() {
         super.setUp()
@@ -23,27 +25,28 @@ class BrainTests: XCTestCase {
     }
     
     func TestIsDivisibleByThree() {
-        let brain = Brain()
         let result = brain.isDivisibleByThree(3)
         XCTAssertEqual(result, true)
     }
     
     func TestIsNotDivisibleByThree() {
-        let brain = Brain()
         let result = brain.isDivisibleByThree(1)
         XCTAssertEqual(result, false)
     }
     
     func TestIsDivisibleByFive() {
-        let brain = Brain()
         let result = brain.isDivisibleByFive(5)
         XCTAssertEqual(result, true)
     }
     
     func TestIsNotDivisibleByFive() {
-        let brain = Brain()
         let result = brain.isDivisibleByFive(1)
         XCTAssertEqual(result, false)
+    }
+    
+    func TestIsDivisibleByFifteen() {
+        let result = brain.isDivisibleByFifteen(15)
+        XCTAssertEqual(result, true)
     }
     
 
