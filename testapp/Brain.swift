@@ -34,7 +34,7 @@ class Brain {
         } else if isDivisibleByThree(number){
             return "Fizz"
         } else {
-            return "1"
+            return "\(number)"
         }
     }
 }
