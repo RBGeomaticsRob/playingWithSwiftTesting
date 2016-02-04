@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import testapp
+
 class BrainTests: XCTestCase {
 
     override func setUp() {
@@ -19,6 +21,17 @@ class BrainTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-
+    
+    func TestIsDivisibleByThree() {
+        let brain = Brain()
+        let result = brain.isDivisibleByThree(3)
+        XCTAssertEqual(result, true)
+    }
+    
+    func TestIsNotDivisibleByThree() {
+        let brain = Brain()
+        let result = brain.isDivisibleByThree(1)
+        XCTAssertEqual(result, false)
+    }
 
 }

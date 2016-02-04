@@ -14,6 +14,7 @@
 		D42897181C6392A300971B12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42897161C6392A300971B12 /* LaunchScreen.storyboard */; };
 		D428972E1C6392A400971B12 /* testappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D428972D1C6392A400971B12 /* testappUITests.swift */; };
 		D428973C1C6393AD00971B12 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D428973B1C6393AD00971B12 /* BrainTests.swift */; };
+		D428973E1C63958400971B12 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D428973D1C63958400971B12 /* Brain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,8 @@
 		D42897291C6392A400971B12 /* testappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D428972D1C6392A400971B12 /* testappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testappUITests.swift; sourceTree = "<group>"; };
 		D428972F1C6392A400971B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D428973B1C6393AD00971B12 /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
+		D428973B1C6393AD00971B12 /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrainTests.swift; path = ../BrainTests.swift; sourceTree = "<group>"; };
+		D428973D1C63958400971B12 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,6 @@
 		D42897011C6392A300971B12 = {
 			isa = PBXGroup;
 			children = (
-				D428973B1C6393AD00971B12 /* BrainTests.swift */,
 				D428970C1C6392A300971B12 /* testapp */,
 				D42897211C6392A400971B12 /* testappTests */,
 				D428972C1C6392A400971B12 /* testappUITests */,
@@ -104,6 +105,7 @@
 				D42897141C6392A300971B12 /* Assets.xcassets */,
 				D42897161C6392A300971B12 /* LaunchScreen.storyboard */,
 				D42897191C6392A300971B12 /* Info.plist */,
+				D428973D1C63958400971B12 /* Brain.swift */,
 			);
 			path = testapp;
 			sourceTree = "<group>";
@@ -111,6 +113,7 @@
 		D42897211C6392A400971B12 /* testappTests */ = {
 			isa = PBXGroup;
 			children = (
+				D428973B1C6393AD00971B12 /* BrainTests.swift */,
 				D42897241C6392A400971B12 /* Info.plist */,
 			);
 			path = testappTests;
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D42897101C6392A300971B12 /* ViewController.swift in Sources */,
+				D428973E1C63958400971B12 /* Brain.swift in Sources */,
 				D428970E1C6392A300971B12 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
