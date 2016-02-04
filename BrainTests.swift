@@ -24,30 +24,34 @@ class BrainTests: XCTestCase {
         super.tearDown()
     }
     
-    func TestIsDivisibleByThree() {
+    func testIsDivisibleByThree() {
         let result = brain.isDivisibleByThree(3)
         XCTAssertEqual(result, true)
     }
     
-    func TestIsNotDivisibleByThree() {
+    func testIsNotDivisibleByThree() {
         let result = brain.isDivisibleByThree(1)
         XCTAssertEqual(result, false)
     }
     
-    func TestIsDivisibleByFive() {
+    func testIsDivisibleByFive() {
         let result = brain.isDivisibleByFive(5)
         XCTAssertEqual(result, true)
     }
     
-    func TestIsNotDivisibleByFive() {
+    func testIsNotDivisibleByFive() {
         let result = brain.isDivisibleByFive(1)
         XCTAssertEqual(result, false)
     }
     
-    func TestIsDivisibleByFifteen() {
+    func testIsDivisibleByFifteen() {
         let result = brain.isDivisibleByFifteen(15)
         XCTAssertEqual(result, true)
     }
     
+    func testIsNotDivisibleByFifteen() {
+        let result = brain.isDivisibleByFifteen(1)
+        XCTAssertEqual(result, false)
+    }
 
 }

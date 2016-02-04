@@ -10,19 +10,19 @@ import Foundation
 
 class Brain {
     
+    
+    func isDivisibleBy(number: Int, divisor: Int) -> Bool {
+        return number % divisor == 0
+    }
     func isDivisibleByThree(number: Int) -> Bool {
-        if number % 3 == 0 {
-            return true
-        } else {
-            return false
-        }
+        return isDivisibleBy(number, divisor: 3)
     }
     
     func isDivisibleByFive(number: Int) -> Bool {
-        return true
+        return isDivisibleBy(number, divisor: 5)
     }
     
     func isDivisibleByFifteen(number: Int) -> Bool {
-        return true
+        return isDivisibleBy(number, divisor: 15)
     }
 }
